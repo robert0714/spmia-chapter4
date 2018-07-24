@@ -22,7 +22,7 @@ public class DiscoveryService {
     @Autowired
     private DiscoveryClient discoveryClient;
 
-    public List getEurekaServices(){
+    public List<String> getEurekaServices(){
        List<String> services = new ArrayList<String>();
 
         discoveryClient.getServices().forEach(serviceName -> {

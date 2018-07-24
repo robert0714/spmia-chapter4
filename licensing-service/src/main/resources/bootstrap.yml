@@ -10,3 +10,7 @@ spring:
 #      discovery:
 #        enabled: true
 #        serviceId: configserver
+
+management:
+  security:
+     enabled: false
